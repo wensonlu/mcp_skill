@@ -1,6 +1,6 @@
 # MCP Skills 仓库
 
-本仓库收集各种 MCP（Model Context Protocol）服务器部署包。
+本仓库收集各种 MCP（Model Context Protocol）服务器部署包和可复用 Codex skills。
 
 ## 目录结构
 
@@ -9,6 +9,11 @@
 ```
 mcp_skill/
 ├── README.md                # 本文件
+├── skills/                  # Codex skills
+│   └── ios-incremental-sync/
+│       ├── SKILL.md
+│       ├── scripts/
+│       └── test/
 ├── feishu/                  # 飞书 MCP - 文档读写
 │   ├── README.md
 │   ├── DEPLOYMENT.md
@@ -40,6 +45,12 @@ mcp_skill/
 |-----|------|------|------|
 | 飞书 | [`feishu/`](./feishu/) | 飞书文档搜索/读取/创建/编辑 | ✅ 已完成 |
 | 商品 API | [`product-api-mcp/`](./product-api-mcp/) | 商品列表/详情查询 | ✅ 已完成 |
+
+## 已收录的 Skills
+
+| Skill | 路径 | 功能 | 状态 |
+|-------|------|------|------|
+| iOS 增量同步 | [`skills/ios-incremental-sync/`](./skills/ios-incremental-sync/) | 根据 H5、RN JS、native 影响范围选择最小安全构建/同步动作 | ✅ 已完成 |
 
 ## 通用规范
 

@@ -18,7 +18,20 @@ mcp_skill/
 │   └── config/
 │       ├── feishu-mcp.service
 │       └── nginx-feishu-mcp.conf
-└── (其他 MCP ...)
+└── product-api-mcp/         # 商品 API MCP - 商品查询
+    ├── README.md
+    ├── DEPLOYMENT.md
+    ├── DEPLOY-PROMPT.md
+    ├── main.py
+    ├── mcp_server.py
+    ├── requirements.txt
+    ├── scripts/
+    │   ├── deploy.sh
+    │   └── run.sh
+    └── config/
+        ├── product-api.service
+        ├── product-api-mcp.service
+        └── nginx-product-api-mcp.conf
 ```
 
 ## 已收录的 MCP
@@ -26,6 +39,7 @@ mcp_skill/
 | MCP | 路径 | 功能 | 状态 |
 |-----|------|------|------|
 | 飞书 | [`feishu/`](./feishu/) | 飞书文档搜索/读取/创建/编辑 | ✅ 已完成 |
+| 商品 API | [`product-api-mcp/`](./product-api-mcp/) | 商品列表/详情查询 | ✅ 已完成 |
 
 ## 通用规范
 

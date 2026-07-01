@@ -1,0 +1,18 @@
+[Unit]
+Description=Product API MCP Server
+After=network.target product-api.service
+BindsTo=product-api.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/product-api-mcp
+Environment=MCP_API_BASE=http://localhost:8000
+Environment=MCP_AUTH_USERNAME=docs
+Environment=MCP_AUTH_PASSWORD=YOUR_PASSWORD_HERE
+ExecStart=/usr/local/bin/uvicorn mcp_server:app --host 0.0.0.0 --port 8765
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

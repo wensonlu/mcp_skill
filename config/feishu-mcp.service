@@ -1,0 +1,15 @@
+[Unit]
+Description=Feishu MCP Server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/feishu-mcp/run.sh
+Restart=always
+RestartSec=5
+User=root
+Environment=NODE_ENV=production
+Environment=PATH=/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/root/bin
+
+[Install]
+WantedBy=multi-user.target

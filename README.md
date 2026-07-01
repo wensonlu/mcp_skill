@@ -10,10 +10,14 @@
 mcp_skill/
 ├── README.md                # 本文件
 ├── skills/                  # Codex skills
-│   └── ios-incremental-sync/
+│   ├── feishu-link-to-obsidian/
+│   │   └── SKILL.md
+│   ├── ios-incremental-sync/
 │       ├── SKILL.md
 │       ├── scripts/
 │       └── test/
+│   └── product-delivery-workflow/
+│       └── SKILL.md
 ├── feishu/                  # 飞书 MCP - 文档读写
 │   ├── README.md
 │   ├── DEPLOYMENT.md
@@ -50,7 +54,9 @@ mcp_skill/
 
 | Skill | 路径 | 功能 | 状态 |
 |-------|------|------|------|
+| 飞书链接导出 Obsidian | [`skills/feishu-link-to-obsidian/`](./skills/feishu-link-to-obsidian/) | 将飞书/Lark 文档导出为 Obsidian Markdown，并处理图片/视频本地化 | ✅ 已恢复 |
 | iOS 增量同步 | [`skills/ios-incremental-sync/`](./skills/ios-incremental-sync/) | 根据 H5、RN JS、native 影响范围选择最小安全构建/同步动作 | ✅ 已完成 |
+| 产品交付工作流 | [`skills/product-delivery-workflow/`](./skills/product-delivery-workflow/) | 从产品想法生成 PRD、交互稿、高保真 H5 和技术方案 | ✅ 已恢复 |
 
 ## 通用规范
 
